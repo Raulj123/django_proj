@@ -1,3 +1,10 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">
+<div class="hero">
+<h1>Attack on Titan Polls </h1>
+</div>
+<div class = "container">
+    <h2>Current questions</h2>
 {% if latest_question_list %}
     <ul>
         {% for question in latest_question_list %}
@@ -7,3 +14,4 @@
 {% else %}
 <p>No polls are available</p>
 {% endif %}
+</div>
